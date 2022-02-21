@@ -33,12 +33,13 @@ justify-content: flex-end;
 }
 
 .header {
-	background-image: url('images\c.png');
+	background-image: url('c.png');
 	background-size: cover;
 	background-position: center;
 	position: relative;
 }
 
+/*-- Contenu Page d"acceuil--*/
 .overlay {
 	position: absolute;
 	min-height: 100%;
@@ -47,18 +48,6 @@ justify-content: flex-end;
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.Compte {
-	text-align: center;
-	border: #fff;
-	border : solid #fff;
-	border-radius: 10px 10px 10px 10px;
-	padding: 10px 3px 10px 3px;
-	font-size: 70%;
-	background-color: #fff;
-	box-shadow: 0 0 0.5em #000;
-	width: 470px;
-	margin: 0 auto;
-}
 
 .description {
 	left: 50%;
@@ -98,6 +87,7 @@ justify-content: flex-end;
 	color: #000;
 }
 
+
 /*-- footer--*/
 
 .page-footer {
@@ -109,4 +99,36 @@ justify-content: flex-end;
 .footer-copyright {
 	color: #666;
 	padding: 40px 0;
+}
+
+/*-- Contenu page Mon compte--*/
+
+.Compte {
+	text-align: center;
+	border: #fff;
+	border : solid #fff;
+	border-radius: 25px 25px 25px 25px;
+	padding: 10px 10px 10px 10px;
+	font-size: 60%;
+	background-color: #fff;
+	box-shadow: 0 0 0.2em #000;
+	width: 500px;
+	margin: 0 auto;
+}
+
+
+
+
+.Compte p{
+	color: rgb(7, 7, 7);
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+.compte {
+	/*-- background-image: url('vert-pastel.jpg'); --*/
+	background-color: #23873d
+	background-size: cover;
+	background-position: center;
+	position: relative;
 }

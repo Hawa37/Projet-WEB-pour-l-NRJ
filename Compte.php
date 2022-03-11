@@ -39,11 +39,16 @@
 			</ul>
 		</div>
 	</nav>
+<!-- fin Navibar -->
 	
 	<section class="page-compte compte container-fluid">
 		<br><br><br>
 		<form>
 			<div class="Compte">
+
+                 <?php
+                    if(!isset($_SESSION['ID'])){
+                  ?>
 
 				<h1>Bonjour<h1>
                 <p>
@@ -62,6 +67,19 @@
 		    </div>
 		</form>
 		<br><br><br><br><br><br>
+
+ 		<?php
+             }else{
+                       
+                    $table="acheteur";
+                    $page="pageacheteur.php";
+
+                    echo        '<div class="b-title text-center">';
+                    echo         '<h1 class="user_title">Connectez-vous ici</h1>';
+                    echo         '<button type="button" name="signin" ><a href='.$page.'>Accéder à votre compte</a></button>';
+                    echo    '</div>';
+                    }
+                ?>
 	</section>
 
 	

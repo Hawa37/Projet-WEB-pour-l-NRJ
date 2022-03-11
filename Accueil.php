@@ -141,11 +141,11 @@ body {
  
 	 <div id="carouselArticle" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active" style= "background-image: url('images/image/cahier oxford.jpg');" >
+    <div class="carousel-item active" style= "background-image: url('images/image/eolienne1.jpg');" >
     </div>
-    <div class="carousel-item" style="background-image: url('images/image/vip1.png');" >
+    <div class="carousel-item" style="background-image: url('images/image/eolienne2.png');" >
     </div>
-    <div class="carousel-item" style="background-image: url('images/image/meuble2.jpg');"  > 
+    <div class="carousel-item" style="background-image: url('images/image/solaire1.webp');"  > 
     </div>
   </div>
 

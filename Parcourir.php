@@ -45,9 +45,9 @@
 			 
 			  <form action="parcourir.php" method="post">
 			  	 <button class="btn active" name="tout" >Tout voir</button>
-			 	 <button class="btn" name="meubles"> Meubles </button>
-			 	  <button class="btn" name="accessoire"> Accessoire </button>
-			 	  <button class="btn" name="materiels"> Matériels </button>
+			 	 <button class="btn" name="eolienne"> Eoliennes </button>
+			 	  <button class="btn" name="solaire"> Panneaux solaires </button>
+			 	  <button class="btn" name="divers"> Divers </button>
 			 	  
 				<input type='hidden' name='idarticle' >
 				
@@ -105,9 +105,9 @@ echo "Database not found";
 }
 }
 
-if (isset($_POST["meubles"])) {
+if (isset($_POST["eolienne"])) {
 if ($db_found) {
-$sql = "SELECT * FROM articles WHERE articles.categorie = 'meuble'";
+$sql = "SELECT * FROM articles WHERE articles.categorie = 'eolienne'";
 
 $result = mysqli_query($db_handle, $sql);
 
@@ -143,9 +143,9 @@ echo "Database not found";
 }
 }
 
-if (isset($_POST["accessoire"])) {
+if (isset($_POST["solaire"])) {
 if ($db_found) {
-$sql = "SELECT * FROM articles WHERE articles.categorie = 'accessoire'";
+$sql = "SELECT * FROM articles WHERE articles.categorie = 'solaire'";
 
 $result = mysqli_query($db_handle, $sql);
 
@@ -181,9 +181,9 @@ echo "Database not found";
 }
 }
 
-if (isset($_POST["materiels"])) {
+if (isset($_POST["divers"])) {
 if ($db_found) {
-$sql = "SELECT * FROM articles WHERE articles.categorie = 'materiels'";
+$sql = "SELECT * FROM articles WHERE articles.categorie = 'divers'";
 
 $result = mysqli_query($db_handle, $sql);
 

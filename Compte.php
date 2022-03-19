@@ -1,3 +1,5 @@
+
+
 <?php
     session_start();
 ?>
@@ -56,13 +58,13 @@
                 <br><br>
 				<label class="label" for="myEmail">Pseudo ou E-mail: </label> <br>
 				<input type="text" class="maConnection" name="monEmail" id="monEmail" />
-				<br><br>
+				<br><br> 
 				<label class="label" for="monMDP">Mot de passe: </label> <br>
 				<input type="mdp" class="maConnection" name="monMDP" id="monMDP" /> <br> 
 				<a class="MDPO" href="MotdePasse.html">Mot de passe oublié ? <br></a> 
 				<br>
-				<input type="submit" class="Bouton1" value="Connexion" />
-				</p>
+				<button class="Bouton1"><a class="link" href="Connexion.php">Connexion</a></button>
+				
 
 		    </div>
 		</form>
@@ -106,3 +108,6 @@
 	</footer>
 </body>
 </html>
+
+
+

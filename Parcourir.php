@@ -47,7 +47,7 @@
 			  	 <button class="btn active" name="tout" >Tout voir</button>
 			 	 <button class="btn" name="eolienne"> Eoliennes </button>
 			 	  <button class="btn" name="solaire"> Panneaux solaires </button>
-			 	  <button class="btn" name="divers"> Divers </button>
+			 	  <button class="btn" name="eoliennesolaire"> Eolienne Solaire </button>
 			 	  
 				<input type='hidden' name='idarticle' >
 				
@@ -88,7 +88,8 @@ echo			'<a class="article" href="pageArticle.php">';
 echo		 	'<img src = "data:image/jpd;base64,' . base64_encode($data['image']) . '" width = "75%"/>';
 echo           '</a>';
 echo		 '<h5>'.$data['nom'].'</h5>';
-echo		$data['prix'].'€';
+echo		 '<h12>'.$data['description'].'</h12>';
+echo		'<h5>'.$data['prix'].'€ </h5>';
 echo 		'<button type="submit"  name="id" value="'.$data['id'].'" class="btn btn-danger my-3">Ajouter au panier <i class="fas fa-shopping-cart"></i></button>';
 echo         '<input type="hidden" name="idarticle" >';
 		
@@ -126,7 +127,9 @@ echo			'<a class="article" href="pageArticle.php">';
 echo		 	'<img src = "data:image/jpd;base64,' . base64_encode($data['image']) . '" width = "75%"/>';
 echo           '</a>';
 echo		 '<h5>'.$data['nom'].'</h5>';
-echo		$data['prix'].'€';
+echo		 '<h12>'.$data['description'].'</h12>';
+
+echo		'<h5>'.$data['prix'].'€ </h5>';
 echo 		'<button type="submit"  name="id" value="'.$data['id'].'" class="btn btn-danger my-3">Ajouter au panier <i class="fas fa-shopping-cart"></i></button>';
 echo         "<input type='hidden' name='idarticle' >";
 		
@@ -164,7 +167,8 @@ echo			'<a class="article" href="pageArticle.php">';
 echo		 	'<img src = "data:image/jpd;base64,' . base64_encode($data['image']) . '" width = "75%"/>';
 echo           '</a>';
 echo		 '<h5>'.$data['nom'].'</h5>';
-echo		$data['prix'].'€';
+echo		 '<h12>'.$data['description'].'</h12>';
+echo		'<h5>'.$data['prix'].'€ </h5>';
 echo 		'<button type="submit"  name="id" value="'.$data['id'].'" class="btn btn-danger my-3">Ajouter au panier <i class="fas fa-shopping-cart"></i></button>';
 echo         "<input type='hidden' name='idarticle' >";
 		
@@ -181,9 +185,9 @@ echo "Database not found";
 }
 }
 
-if (isset($_POST["divers"])) {
+if (isset($_POST["eoliennesolaire"])) {
 if ($db_found) {
-$sql = "SELECT * FROM articles WHERE articles.categorie = 'divers'";
+$sql = "SELECT * FROM articles WHERE articles.categorie = 'eoliennesolaire'";
 
 $result = mysqli_query($db_handle, $sql);
 
@@ -202,7 +206,8 @@ echo			'<a class="article" href="pageArticle.php">';
 echo		 	'<img src = "data:image/jpd;base64,' . base64_encode($data['image']) . '" width = "75%"/>';
 echo           '</a>';
 echo		 '<h5>'.$data['nom'].'</h5>';
-echo		$data['prix'].'€';
+echo		 '<h12>'.$data['description'].'</h12>';
+echo		'<h5>'.$data['prix'].'€ </h5>';
 echo 		'<button type="submit"  name="id" value="'.$data['id'].'" class="btn btn-danger my-3">Ajouter au panier <i class="fas fa-shopping-cart"></i></button>';
 echo         "<input type='hidden' name='idarticle' >";
 		

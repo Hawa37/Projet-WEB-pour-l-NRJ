@@ -47,7 +47,7 @@
 
 <div class="row">
   <div class="col-75">
-    <div class="container">
+    <div class="containerP">
       <form action="/action_page.php">
 
         <div class="row">

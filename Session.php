@@ -5,6 +5,8 @@
 
 
     $ID=0;
+    $choix=isset($_POST["choix"])? $_POST["choix"] : "";
+    $_SESSION['choix']=$choix;
 	$nom=isset($_POST["nom"])? $_POST["nom"] : "";
 	$prenom=isset($_POST["prenom"])? $_POST["prenom"] : "";
 	$pseudo=isset($_POST["pseudo"])? $_POST["pseudo"] : "";
@@ -79,7 +81,7 @@ if (isset($_POST["id"])){
 				if($emailexist==0){
 					$sql="INSERT INTO acheteur(nom,prenom,email,adresse,codepostal,ville,telephone,pseudo,mdp,pdp) VALUES ('$nom','$prenom','$email','',0,'',0,'$pseudo','$mdp',0)";
 					$result = mysqli_query($db_handle, $sql);
-					 echo "Inscription reussie, <br>cliquez "
+					 echo "Inscription reussie, <br>cliquez "."<a href='compte1.php'>"."ici"."</a>"." pour choisir votre compte<br>";
 				
 				}else{echo "email deja existant<br>";}
 			}else{echo "le formulaire n'est pas remplie<br>";}
@@ -92,8 +94,13 @@ if (isset($_POST["id"])){
 
 		if(isset($_POST["connexion"])){	
 			
+				if($choix==1){
 				$table="acheteur";
 				$page="pageacheteur.php";
+			}
+			if($choix==2){
+				$table="administrateur";
+				$page="pageadmin.php";
 			}
 
 
@@ -123,6 +130,25 @@ if (isset($_POST["id"])){
 	}
 
 
+    if($choix==3){
+	if($db_found){
+    	if($email!='' && $mdp!=''){
+    	$sql="SELECT id_admin, nom, prenom, mdp, email FROM $table WHERE email='$email' AND mdp='$mdp'";
+    	$result = mysqli_query($db_handle, $sql);
+    	while($data = mysqli_fetch_assoc($result)){
+    		$_SESSION['nom']=$data['nom'];
+    		$_SESSION['prenom']=$data['prenom'];
+    		$_SESSION['email']=$email;
+    		$_SESSION['mdp']=$mdp;
+    		$_SESSION['ID']=$data['id_admin'];
+
+
+    	}
+    }
+
+    }
+}else{
+	
     if($db_found){
     	if($email!='' && $mdp!=''){
     	$sql="SELECT id_utilisateur, nom, prenom, pseudo, adresse, codepostal, ville, telephone FROM $table WHERE email='$email' AND mdp='$mdp'";

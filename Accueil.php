@@ -53,25 +53,30 @@ body {
 #carouselArticle {
   width: 100%;
   margin: 10px;
+  height : 35%;
 }
 
 .carousel-item {
   width: 100%;
-  height: 400px;
-  margin-bottom: 40px;
+  height: 250px;
+  margin-bottom: 0px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 
 }
 
+.parent-container {
+   display: flex;
+}
+
 .carousel-item img {
-  margin: 10px;
+  margin: 50px;
   float: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 500px;
+  height: 300px;
 }
 
 .col-lg-4 {
@@ -138,12 +143,51 @@ body {
 	</nav>
 
      <!--Le carousel-->
- 
-	 <div id="carouselArticle" class="carousel slide" data-ride="carousel">
+
+	 <div class="parent-container">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+
+			<div id="carouselArticle" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" style= "background-image: url('images/image/car4.png');" >
     </div>
     <div class="carousel-item" style="background-image: url('images/image/car2.jpg');" >
+    </div>
+    <div class="carousel-item" style="background-image: url('images/image/car10.jpg');"  > 
+    </div>
+  </div>
+
+
+	 	<a href="#carouselArticle" class="carousel-control-prev " role="button" data-slide="prev">
+	 		<span class="carousel-control-prev-icon"></span>
+</a>
+	 	<a href="#carouselArticle" class="carousel-control-next" role="button" data-slide="next">
+	 		<span class="carousel-control-next-icon"></span>
+	 	</a>
+
+ 	</div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+
+
+
+			<div id="carouselArticle" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style= "background-image: url('images/image/car12.jpg');" >
+    </div>
+    <div class="carousel-item" style="background-image: url('images/image/car7.jpg');" >
     </div>
     <div class="carousel-item" style="background-image: url('images/image/car5.jpg');"  > 
     </div>
@@ -158,6 +202,17 @@ body {
 	 	</a>
 
  	</div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+ 
+	 
 <!--Fin du carousel-->
 
 
@@ -173,7 +228,7 @@ body {
  					<div class="container">
  						<div class="row element">
  							<div class="col-lg-8">
- 								<p>Site de e-commerce en ligne </p>
+ 								<p>Votre site de e-commerce qui respecte l'environnement</p>
  							</div>
  						</div>
 
@@ -186,7 +241,7 @@ body {
  					<div class="container">
  						<div class="row element">
  							<div class="col-lg-8">
- 								<p>3 catégorie d'articles disponibles</p>
+ 								<p>Jusqu'a 3 catégorie d'articles disponibles ! </p>
  							</div>
  						</div>
 
@@ -200,7 +255,7 @@ body {
  					<div class="container">
  						<div class="row element">
  							<div class="col-lg-8">
- 								<p>blablabla</p>
+ 								<p>Retrouvez nos meilleurs produits dans les différentes catégories</p>
  							</div>
  						</div>
 

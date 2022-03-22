@@ -1,0 +1,219 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #f2f6e9;
+    }
+    
+    /*---navigation bar ---*/
+    .navbar {
+    background: #222 ;
+    }
+    
+    .nav-link, .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+    }
+    
+    .nav-link {
+    margin-right: 1em !important;
+    }
+    
+    .nav-link:hover {
+    color: #000;
+    }
+    
+    .navbar-collapse {
+    justify-content: flex-end;
+    }
+    
+    /*--header--*/
+    
+    .page-header header {
+        height: auto;
+    }
+    
+    .header {
+        background-image: url('c.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .parent-container {
+      display: flex;
+   }
+    
+    /*-- Contenu Page d"acceuil--*/
+    .overlay {
+        position: absolute;
+        min-height: 100%;
+        min-width: 100%;
+        left: 0px;top: 0px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    
+    .description {
+        left: 50%;
+        position: absolute;
+        top: 45%;
+        transform: translate(-50%, -55%);
+        text-align: center;
+    }
+    
+    .description h1 {
+        color: #23873d;
+    }
+    
+    .description p {
+        color: #fff;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .description li {
+        color: #fff;
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    
+    .description button {
+        border:1px solid  #23873d ;
+        background-color:#23873d ;
+        border-radius: 0;
+        color:#fff;
+        font-size: 0.8rem;
+    }
+    
+    .description button:hover {
+        border:1px solid #fff;
+        background-color:#fff;
+        color: #000;
+    }
+    
+    
+    /*-- footer--*/
+    
+    .page-footer {
+        background-color: #222;
+        color: #ccc;
+        padding: 60px 0 30px;
+        }
+    
+    .footer-copyright {
+        color: #666;
+        padding: 40px 0;
+    }
+    
+    /*-- Contenu page Mon compte--*/
+    
+    .Compte {
+        text-align: center;
+        border: #fff;
+        border : solid #fff;
+        border-radius: 25px 25px 25px 25px;
+        padding: 10px 10px 10px 10px;
+        font-size: 60%;
+        background-color: #fff;
+        box-shadow: 0 0 0.2em #000;
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+    
+    
+    
+    .Compte p{
+        color: rgb(7, 7, 7);
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .compte {
+        /*-- background-image: url('vert-pastel.jpg'); --*/
+        background-color: #23873d
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    
+
+    /*-- Carroussel --*/
+
+    #carouselArticle {
+        width: 100%;
+        margin: 10px;
+      }
+      
+      .carousel-item {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 40px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      
+      }
+      
+      .carousel-item img {
+        margin: 10px;
+        float: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 500px;
+      }
+      
+      .col-lg-4 {
+        margin-top: 60px;
+      }
+      
+      .icone {
+        display: inline-block;
+        font-size: 32px;
+        margin-bottom: 16px;
+        color: #000;
+        padding: 8px 16px;
+      }
+      
+      #new {
+        background: black;
+        margin-top: 30px;
+        color: white;
+      }
+      
+      #nouveau {
+        text-align: center;
+      }
+      
+      .section {
+        background-color: #d8d8d8;
+      }
+      
+      .section a {
+        color: black;
+      }      
+
+
+      .button {
+        border: none;
+        background: url("img/proceed.png") no-repeat;
+        background-position: 0 0;
+        width: 177px;
+        height: 47px;
+        display: block;
+        float: right;
+        text-align: center;
+        text-decoration: none;
+        line-height: 47px;
+        color: #FFF;
+        font-family: 'AllerRegular';
+        font-size: 16px;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+        margin-top: 15px; }
+
+        .MerciP {
+          background-image: url('thanks.gif');
+          background-size: cover;
+          background-position: center;
+          position: relative;
+      }
